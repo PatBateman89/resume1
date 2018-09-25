@@ -62,7 +62,7 @@ body
     attachment: fixed
     size: cover
   @media only screen and (max-width: 768px)
-    height: 39vh
+    height: 50vh
     background: hsl(141, 71%, 48%)
 
 
@@ -227,6 +227,8 @@ body
   z-index: 999
   transition: all 2s
   font-size: 4em
+  @media only screen and (max-width: 768px)
+    font-size: 3em
 
 
   ul
@@ -240,6 +242,8 @@ body
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+    @media only screen and (max-width: 768px)
+      top: 33%
 
     li
       margin: 30px
@@ -360,3 +364,26 @@ footer
 .pusher
   z-index: 100
   background-color: white
+
+.skills-section
+  flex-wrap: wrap 
+
+.skills
+  text-align: center
+  background: white
+  padding-top: 20px
+
+  .card
+    border: 2px solid #ebecec
+    border-radius: 7px
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+    margin: .4em
+
+    p
+      padding: 10px
+
+.skill-pic
+  max-width: 60px
+  display: block
+  margin: auto
+  margin-top: 10px
