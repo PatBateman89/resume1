@@ -63,6 +63,11 @@ body
     size: cover
   @media only screen and (max-width: 768px)
     height: 66vh
+    repeat: no-repeat
+    image: url("https://s3.amazonaws.com/resume-eric/computer1.jpg")
+    position: top center
+    attachment: scroll
+    size: cover
 
   .name
     padding-top: 5%
@@ -78,6 +83,9 @@ body
     text-transform: uppercase
     letter-spacing: 0.05em
     text-align: center
+    @media only screen and (max-width: 768px)
+      font:
+        size: 60px
 
     span
       display: inline-block
