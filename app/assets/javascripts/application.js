@@ -17,8 +17,10 @@
 //= require_tree .
 //= require Chart.bundle
 //= require chartkick
-
 $(window).scroll(function(){
+
+  if(window.innerWidth > 568){
+
 
   var wScroll = $(this).scrollTop();
 
@@ -40,6 +42,8 @@ $(window).scroll(function(){
     });
 
   }
+
+}
 
 
 });
