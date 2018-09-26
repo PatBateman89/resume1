@@ -23,7 +23,7 @@ body
   font-family: "Raleway", sans-serif
   margin-bottom: 400px
   @media only screen and (max-width: 768px)
-    margin-bottom: 800px
+    margin-bottom: 0px
 
   h1
     color: #ccc
@@ -71,7 +71,8 @@ body
   @media only screen and (max-width: 768px)
     height: 50vh
     background: hsl(141, 71%, 48%)
-
+  @media (min-width: 769px) and (max-width: 1024px)
+    width: 100%
 
   .name
     padding-top: 5%
@@ -328,7 +329,9 @@ footer
   z-index: -2
   padding: 10px 20px 10px 20px
   @media only screen and (max-width: 768px)
-    margin-top: 100px
+    position: relative
+    z-index: 1
+    background: black
 
 
   .footer-stuff
